@@ -1,6 +1,8 @@
+//required all modules ro be defined
 var express= require('express');
 var app = express();
 var routes = require('./routes');
+
 app.set('view engine','ejs') //refers to view folder
 app.get('/',routes.index);
 app.get('/about',routes.about);
